@@ -1,11 +1,15 @@
 {
   "name": "task-tracker-cli",
   "version": "1.0.0",
-  "bin": "bin/cli.js",
+  "bin": {
+    "task-cli": "bin/cli.js"
+  },
   "description": "Simple task tracker cli program",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run clean && tsc --build",
+    "clean": "tsc --build --clean",
+    "start": "npm run build -- --watch"
   },
   "keywords": [
     "task-traker",
@@ -13,5 +17,8 @@
     "task-management-cli"
   ],
   "author": "Nikesh",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
 }
