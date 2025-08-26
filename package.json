@@ -1,0 +1,17 @@
+{
+  "name": "task-tracker-cli",
+  "version": "1.0.0",
+  "bin": "bin/cli.js",
+  "description": "Simple task tracker cli program",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "task-traker",
+    "cli",
+    "task-management-cli"
+  ],
+  "author": "Nikesh",
+  "license": "ISC"
+}
