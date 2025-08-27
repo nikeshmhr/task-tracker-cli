@@ -7,10 +7,10 @@
 ## In Progress
 
 -
-- outline api usage
 
 ## Done
 
 -
+- outline api usage
 - bin export
 - project setup: typescript, dev env

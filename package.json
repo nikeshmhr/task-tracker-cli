@@ -19,6 +19,11 @@
   "author": "Nikesh",
   "license": "ISC",
   "devDependencies": {
+    "@types/debug": "^4.1.12",
+    "@types/node": "^24.3.0",
     "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "debug": "^4.4.1"
   }
 }
