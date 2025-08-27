@@ -1,13 +1,16 @@
-TODO:
+# Board
 
-- bin export
+## Todo
+
 - test setup
 
-IN PROGRESS:
+## In Progress
 
+-
+- outline api usage
+
+## Done
+
+-
+- bin export
 - project setup: typescript, dev env
--
-
-DONE:
-
--
