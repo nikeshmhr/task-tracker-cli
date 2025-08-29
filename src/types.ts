@@ -24,3 +24,7 @@ export interface CommandHandler {
   action: CallableFunction;
   options?: HandlerOptions;
 }
+
+export interface Identifiable {
+  id: string;
+}

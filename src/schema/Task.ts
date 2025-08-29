@@ -1,13 +1,16 @@
 import { Status } from "../types";
 
 export class Task {
-  id: number;
+  id: string;
   description: string;
   status: Status;
   createdAt: Date;
   updatedAt: Date;
 
-  constructor(specs: Task) {
+  constructor(specs: Partial<Task>) {
+    if (!specs.id) {
+      throw new Error("ID is required");
+    }
     this.id = specs.id;
 
     if (!specs.description) {

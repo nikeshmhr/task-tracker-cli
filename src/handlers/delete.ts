@@ -1,3 +1,9 @@
-const handler = (id: number) => {};
+import getStorage from "../db";
 
-export default handler;
+const storage = getStorage();
+
+const deleteHandler = async (id: string) => {
+  await storage.delete(id);
+};
+
+export default deleteHandler;
