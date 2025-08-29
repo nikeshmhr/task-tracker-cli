@@ -6,6 +6,7 @@ const storage = getStorage();
 const updateHandler = async (id: string, updatedDescription: string) => {
   const updatedRecord = await storage.update(id, {
     description: updatedDescription,
+    updatedAt: new Date(),
   });
 
   if (!updatedRecord) {

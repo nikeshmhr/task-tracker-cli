@@ -12,7 +12,9 @@ const listHandler = async (status?: Status) => {
   return tasks
     .map(
       (task) =>
-        `ID: ${task.id}, Description: ${task.description}, Status: ${task.status}`
+        `ID: ${task.id}, Description: ${task.description}, Status: ${
+          task.status
+        }, Created At: ${task.createdAt.toISOString()}, Updated At: ${task.updatedAt.toISOString()}`
     )
     .join("\n");
 };
